@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="F:/iti/Testing/Automation">
+    <classes><class name="F1_SignUp.F1_SignUpTests">
+        <methods><include name="TestSignUpAlert"/>
+            <include name="TestEmptySignUpAlert"/>
+            <include name="TestUsernameOnlySignUpAlert"/>
+            <include name="TestPasswordOnlySignUpAlert"/>
+        </methods></class><class name="F1_SignUp.F1_SignUpTests">
+        <methods><include name="TestEmptySignUpAlert"/>
+            <include name="TestUsernameOnlySignUpAlert"/>
+            <include name="TestPasswordOnlySignUpAlert"/>
+            <include name="TestSignUpAlert"/>
+        </methods></class><class name="F2_Login.F2_LoginTests">
+        <methods><include name="testLoginWithEmptyData"/>
+            <include name="testLoginWithUnValidUsername"/>
+            <include name="testLoginWithUnValidPassword"/>
+            <include name="testSuccessfulLogin"/>
+        </methods></class><class name="F4_Contact.F4_ContactsTests">
+        <methods><include name="testSuccessfulContact"/>
+        </methods></class></classes></test></suite>
